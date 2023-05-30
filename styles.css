@@ -57,6 +57,19 @@ header{
   justify-content: space-between;
   padding: 20px 0;
 }
+.nav-items
+{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height:50px;
+  background-color: rgb(164, 237, 247);
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+}
 
 .logo
 {
@@ -77,7 +90,7 @@ header{
   width:360px;
   min-height:100vh;
   padding:20px;
-  background: var(--bg-color);
+  background: rgb(242, 240, 240);
   box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
   transition: 0.3s;
 }
