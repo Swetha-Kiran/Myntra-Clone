@@ -96,7 +96,7 @@ var cartBoxContent = `
                         <div class="cart-price">${price}</div>
                         <input type="number" value="1" class="cart-quantity">
                     </div>
-                    <i class="'bx bxs-trash-alt cart-remove"></i>`;
+                    <i class='bx bxs-trash cart-remove'></i>`;
                 
           cartShopBox.innerHTML = cartBoxContent;
           cartItems.append(cartShopBox);
