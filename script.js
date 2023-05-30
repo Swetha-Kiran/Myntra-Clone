@@ -79,16 +79,18 @@ function addProductToCart(title,price,productImg)
   var cartShopBox = document.createElement("div");
   cartShopBox.classList.add("cart-box");
   var cartItems = document.getElementsByClassName("cart-content")[0];
-  var cartItemNames = cartItems.getElementsByClassName("cart-product-title");
-  for(var i=0;i < cartItemNames.length;i++)
+  var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
+  for(var i=0 ; i < cartItemsNames.length;i++)
   {
+    if(cartItemsNames[i].innerText == title)
+    {
     alert("You have already added this item to cart");
     return;
   }
-
+}
 
 var cartBoxContent = `
-                    <img src='${productImg}' alt="" class="cart-img" />
+                    <img src='${productImg}' alt="" class="cart-img">
                     <div class="detail-box">
                         <div class="cart-product-title">${title}</div>
                         <div class="cart-price">${price}</div>
@@ -100,7 +102,9 @@ var cartBoxContent = `
           cartItems.append(cartShopBox);
           cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click',removeCartItem);
           cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change',quantityChanged);
+
 }
+
 function quantityChanged(event){
   var input = event.target;
   if(isNaN(input.value) || input.value <= 0){

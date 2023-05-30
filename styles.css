@@ -19,9 +19,14 @@
 img{
   width:100%;
 }
+
+
 body
 {
   color:var(--text-color);
+  background-image: url("images/background-1.jpeg");
+
+
 
 }
 header{
@@ -29,15 +34,20 @@ header{
   top:0;
   left:0;
   width:100%;
-  background-color: var(--bg-color);
+  background-color:rgb(183, 245, 90);
   box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
   z-index: 100;
 }
 .container
 {
   max-width: 1068px;
-  margin:auto;
+  margin: auto;
   width:100%;
+}
+.heading
+{
+  font-style: oblique;
+  color: rgb(66, 65, 65);
 }
 .nav
 {
@@ -51,7 +61,8 @@ header{
 {
   font-size: 1.1rem;
   color:var(--text-color);
-  font-weight: 400;
+  font-weight: bold;
+
 }
 #cart-icon
 {
@@ -67,6 +78,7 @@ header{
   padding:20px;
   background: var(--bg-color);
   box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  transition: 0.3s;
 }
 .cart.active
 {
@@ -102,7 +114,7 @@ header{
 .cart-price{
   font-weight: 500;
 }
-.card-quantity
+.cart-quantity
 {
   border: 1px solid var(--text-color);
   outline-color: var(--main-color);
@@ -165,6 +177,7 @@ section{
 .shop
 {
   margin-top: 2rem;
+  background-color: white;
 }
 .shop-content
 {
