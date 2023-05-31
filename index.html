@@ -1,191 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Choice | e-Commerce Website</title>
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./styles.css" />
-
-</head>
-<body>
-    <header>
-        <div class="nav container">
-            <a href="#" class="logo"><img src="https://img.favpng.com/9/8/23/shopify-e-commerce-website-magento-logo-png-favpng-cs50DCviGvrPig1KR2SLZ395w.jpg" style="height:40px;width:40px;" /></a>
-             <h3 class="heading">YOUR CHOICE - e-Commerce Website</h3>
-            <i class='bx bx-shopping-bag' id="cart-icon"></i>
-            <div class="cart">
-             <h2 class="cart-title">Your Cart</h2>
-             <div class="cart-content">
-            
-             </div>
-
-             <div class="total">
-                <div class="total-title">Total</div>
-                <div class="total-price">Rs.0</div>
-             </div>
-             
-             <button type="button" class="btn-buy">Buy Now</button>
-
-              <i class='bx bx-x' id="close-cart"></i>
-
-            </div>
-        </div>
-    </header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
    
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Vastra - ecommerce Website</title>
+  </head>
+  <body>
+    
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+        <a href="/" class="logo"><h1>Vastra</h1></a>
 
-    <section class="shop container">
-        <div class="nav-items">
-           <li> <a href="">About us</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Cart</a></li>
-            <li><a href="">Account</a></li>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+        
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a href="login.html" class="nav-link"> Account</a>
+             </li>
+            <li>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i></a>
+          </li>
+          </ul>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
           </div>
-        <h2 class="section-title">Shop Products</h2>
+        </div>
+      </div>
 
-        <div class="shop-content">
-
-            <div class="product-box">
-                <img src="images/product1.jpg" alt="" class="product-img">
-                <h2 class="product-title">AEROREADY SHIRT</h2>
-                <span class="price">Rs.250</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-     
-            <div class="product-box">
-                <img src="images/product-1.jpg" alt="" class="product-img">
-                <h2 class="product-title">PINK T-SHIRT</h2>
-                <span class="price">Rs.300</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-
-            <div class="product-box">
-                <img src="images/product2.jpg" alt="" class="product-img">
-                <h2 class="product-title">WIRELESS EARBUDS</h2>
-                <span class="price">Rs.500</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-
-            <div class="product-box">
-                <img src="images/product-2.jpg" alt="" class="product-img">
-                <h2 class="product-title">RED BACKPACK</h2>
-                <span class="price">Rs.1000</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-     
-            <div class="product-box">
-                <img src="images/product3.jpg" alt="" class="product-img">
-                <h2 class="product-title">HOODED PARKA</h2>
-                <span class="price">Rs.550</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-
-            <div class="product-box">
-                <img src="images/product-3.jpg" alt="" class="product-img">
-                <h2 class="product-title">PURPLE HOODIE</h2>
-                <span class="price">Rs.745</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
+      <div class="row">
+        <div class="col-2">
+            <h1>Give your life <br>A NEW STYLE!</h1>
+            <p>Be Uniquely you. Fashion is an expression. Live life in style.</p>
+             <a href="" class="btn">Explore Now</a>      
+        </div>
+        <div class="col-2">
+            <img src="https://img.freepik.com/free-photo/studio-shot-pretty-black-woman-with-white-shopping-bag-standing-yellow-background-trendy-spring-fashionable-look_273443-10.jpg"  alt=""/>
+        </div>
+      </div>
+    
       
-            <div class="product-box">
-                <img src="images/product4.jpg" alt="" class="product-img">
-                <h2 class="product-title">METAL BOTTLE</h2>
-                <span class="price">Rs.850</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+    <!-- Categories Section -->
+    <div class="categories">
+        <h2 class="title">Featured Categories</h2>
+     <div class="small-container">
+        <div class="row" background-color="white">
+            <div class="col-3">
+              <img src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" alt="" />
+           
             </div>
+            <div class="col-3">
+              <img src="https://www.khattemeethedesires.com/wp-content/uploads/fashion-accessories-1-e1620388327280.jpg" alt="" />
             
-            <div class="product-box">
-                <img src="images/product-4.jpg" alt="" class="product-img">
-                <h2 class="product-title">GREY HOODIE</h2>
-                <span class="price">Rs.980</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
+            <div class="col-3">
+              <img src="https://images.indianexpress.com/2021/11/GettyImages-mens-fashion-winter-1200.jpg?w=414" alt="" />
+             
+            </div>
+          </div>
+    
+    </div>
+    </div>
 
-            <div class="product-box">
-                <img src="images/product5.jpg" alt="" class="product-img">
-                <h2 class="product-title">SILVER METAL SUNGLASSES</h2>
-                <span class="price">Rs.450</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="./images/product-1.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
-
-            <div class="product-box">
-                <img src="images/product-5.jpg" alt="" class="product-img">
-                <h2 class="product-title">BLACK SWEATSHIRT</h2>
-                <span class="price">Rs.1250</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+            <div class="col-4">
+                <img src="./images/product-2.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
-      
-            <div class="product-box">
-                <img src="images/product6.jpg" alt="" class="product-img">
-                <h2 class="product-title">BLACK HAT</h2>
-                <span class="price">Rs.200</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+            <div class="col-4">
+                <img src="./images/product-3.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
-
-            <div class="product-box">
-                <img src="images/product-6.jpg" alt="" class="product-img">
-                <h2 class="product-title">GREEN T_SHIRT</h2>
-                <span class="price">Rs.300</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+            <div class="col-4">
+                <img src="./images/product-4.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
-     
-            <div class="product-box">
-                <img src="images/product7.jpg" alt="" class="product-img">
-                <h2 class="product-title">BACKPACK</h2>
-                <span class="price">Rs.875</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+            <div class="col-4">
+                <img src="./images/product-5.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
-              
-            <div class="product-box">
-                <img src="images/product-7.jpg" alt="" class="product-img">
-                <h2 class="product-title">BLUE T-SHIRT</h2>
-                <span class="price">Rs.445</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+            <div class="col-4">
+                <img src="./images/product-6.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
-            
-
-            <div class="product-box">
-                <img src="images/product8.jpg" alt="" class="product-img">
-                <h2 class="product-title">ULTRABOOST 22</h2>
-                <span class="price">Rs.1345</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+            <div class="col-4">
+                <img src="./images/product-7.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-8.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-9.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-10.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-11.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/product-12.jpg">
+                <h4>Red T-Shirt</h4>
+                <p>$50.00</p>
             </div>
         </div>
+    </div>
+   
+    <section class="section contact" id="contact">
        
-
-    </section>
-
-    <footer>
-            <div class="footer">
-              <div class="info h4-info">
-                <h4>INFORMATION</h4>
-               <li> <a href="">About us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Term & Conditions</a></li>
-                <li><a href="">Shipping Guide</a></li>
+        <div class="row" style="background-color: #ccc;">
+          <div class="col support">
+            <h2>EXCELLENT SUPPORT</h2>
+       
+            <a href="" class="btn btn-1">Contact</a>
+          </div>
+          <div class="col">
+            <form action="">
+              <div>
+                <input type="email" placeholder="Email Address">
+              <a href="">Send</a>
               </div>
-              <div class="link h4-info">
-                <h4>USEFUL LINK</h4>
-                <li><a href="">Online Store</a></li>
-                <li><a href="">Customer Services</a></li>
-                <li><a href="">Promotion</a></li>
-                <li><a href="">Top Brands</a></li>
-              </div>
-              <div class="reach-out h4-info">
-                <h4>REACH_US</h4>
-                <span><i class='bx bxl-facebook-square'></i></span>
-                <span><i class='bx bxl-instagram-alt' ></i></span>
-                <span><i class='bx bxl-github' ></i></span>
-                <span><i class='bx bxl-twitter' ></i></span>
-                <span><i class='bx bxl-pinterest' ></i></span>
-              </div>
-            </div>
-        
-    </footer>
+            </form>
+          </div>
+        </div>
+      </section>
 
-    
-    <script src="./script.js"></script>
-</body>
+      <footer class="footer">
+        <div class="row" style="background-color:rgb(241, 174, 5);border-radius: 10px;">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">About us</a>
+            <a href="">Contact Us</a>
+            <a href="">Term & Conditions</a>
+            <a href="">Shipping Guide</a>
+          </div>
+          <div class="col d-flex">
+            <h4>USEFUL LINK</h4>
+            <a href="">Online Store</a>
+            <a href="">Customer Services</a>
+            <a href="">Promotion</a>
+            <a href="">Top Brands</a>
+          </div>
+          <div class="col d-flex">
+            <span><i class='bx bxl-facebook-square'></i></span>
+            <span><i class='bx bxl-instagram-alt' ></i></span>
+            <span><i class='bx bxl-github' ></i></span>
+            <span><i class='bx bxl-twitter' ></i></span>
+            <span><i class='bx bxl-pinterest' ></i></span>
+          </div>
+        </div>
+      </footer>
+  </body>
+
 </html>
