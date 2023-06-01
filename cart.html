@@ -1,152 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
 
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Your Cart</title>
-  </head>
-  <body>
-    <div class="navigation">
-      <div class="nav-center container d-flex">
-      <a href="/" class="logo"><h1>Vastra</h1></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Your Cart</title>
+</head>
 
-        <ul class="nav-list d-flex">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="product.html" class="nav-link">Products</a>
-          </li>
-      
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item">
-          <a href="login.html" class="nav-link"> Account</a>
-           </li>
-          <li>
-          <a href="cart.html" class="icon">
-            <i class="bx bx-cart"></i></a>
-        </li>
-        </ul>
-
-        <div class="hamburger">
-          <i class="bx bx-menu-alt-left"></i>
-        </div>
-      </div>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="/" class="logo">
+        <h1>Vastra</h1>
+      </a>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Products</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link"> Account</a></li>
+
+      </ul>
+    </nav>
+    <a href="cart.html"><img src="./images/cart.png" alt="" width="25px" height="25px" /></a>
+    <img src="./images/menu.png" alt="" class="menu-icon" width="25px" height="25px" />
+  </div>
 
 
-    <div class="container cart">
+  <div class="small-container cart-page">
+    <table>
+      <tr style=" margin-top:10px;">
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/product-2.jpg" alt="" />
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: $50.00</span> <br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1" /></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/product-3.jpg" alt="" />
+            <div>
+              <p>Tracks</p>
+              <span>Price: $90.00</span> <br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1" /></td>
+        <td>$90.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./images/product-5.jpg" alt="" />
+            <div>
+              <p>Casual Shoes</p>
+              <span>Price: $60.00</span> <br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1" /></td>
+        <td>$60.00</td>
+      </tr>
+    </table>
+
+    <div class="total-price">
       <table>
-        <tr style=" margin-top:10px;">
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
+        <tr>
+          <td>Subtotal</td>
+          <td>$200</td>
         </tr>
         <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-2.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $50.00</span> <br />
-                <a href="#">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" min="1" /></td>
-          <td>$50.00</td>
+          <td>Tax</td>
+          <td>$50</td>
         </tr>
         <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-3.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $90.00</span> <br />
-                <a href="#">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" min="1" /></td>
-          <td>$90.00</td>
+          <td>Total</td>
+          <td>$250</td>
         </tr>
-       
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="./images/product-5.jpg" alt="" />
-              <div>
-                <p>Boy’s T-Shirt</p>
-                <span>Price: $60.00</span> <br />
-                <a href="#">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" min="1" /></td>
-          <td>$60.00</td>
-        </tr>
-      
       </table>
-      <div class="total-price">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$200</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>$50</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$250</td>
-          </tr>
-        </table>
-        <a href="#" class="checkout btn">Proceed To Checkout</a>
+      <a href="#" class="checkout btn">Proceed To Checkout</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col">
+        <h3>INFORMATION</h3>
+        <a href="">About us</a>
+        <a href="">Contact Us</a>
+        <a href="">Term & Conditions</a>
+        <a href="">Shipping Guide</a>
+      </div>
+      <div class="col">
+        <h3>USEFUL LINK</h3>
+        <a href="">Online Store</a>
+        <a href="">Customer Services</a>
+        <a href="">Promotion</a>
+        <a href="">Top Brands</a>
+      </div>
+      <div class="col">
+        <span><i class='bx bxl-facebook-square'></i></span>
+        <span><i class='bx bxl-instagram-alt'></i></span>
+        <span><i class='bx bxl-github'></i></span>
+        <span><i class='bx bxl-twitter'></i></span>
+        <span><i class='bx bxl-pinterest'></i></span>
       </div>
     </div>
+  </footer>
 
-   
+  <script src="./script.js"></script>
+</body>
 
- 
-    <footer class="footer">
-      <div class="row" style="background-color:rgb(241, 174, 5);border-radius: 10px;">
-        <div class="col d-flex">
-          <h4>INFORMATION</h4>
-          <a href="">About us</a>
-          <a href="">Contact Us</a>
-          <a href="">Term & Conditions</a>
-          <a href="">Shipping Guide</a>
-        </div>
-        <div class="col d-flex">
-          <h4>USEFUL LINK</h4>
-          <a href="">Online Store</a>
-          <a href="">Customer Services</a>
-          <a href="">Promotion</a>
-          <a href="">Top Brands</a>
-        </div>
-        <div class="col d-flex">
-          <span><i class='bx bxl-facebook-square'></i></span>
-          <span><i class='bx bxl-instagram-alt' ></i></span>
-          <span><i class='bx bxl-github' ></i></span>
-          <span><i class='bx bxl-twitter' ></i></span>
-          <span><i class='bx bxl-pinterest' ></i></span>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./script.js"></script>
-  </body>
 </html>
