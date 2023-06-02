@@ -2,16 +2,16 @@
 var menuitems = document.getElementById("menu-items");
 menuitems.style.maxHeight = "0px";
 
-var menu = document.querySelector(".menu-icon");
 
-menu.addEventListener("click", () => {
+
+function togglemenu() {
   if (menuitems.style.maxHeight == "0px") {
     menuitems.style.maxHeight = "200px"
   }
   else {
     menuitems.style.maxHeight = "0px";
   }
-})
+}
 //form js
 
 var login = document.getElementById("LoginForm");
