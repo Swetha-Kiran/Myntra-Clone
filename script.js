@@ -1,4 +1,4 @@
-//menu
+//menu js
 var menuitems = document.getElementById("menu-items");
 menuitems.style.maxHeight = "0px";
 
@@ -12,6 +12,7 @@ function togglemenu() {
     menuitems.style.maxHeight = "0px";
   }
 }
+
 //form js
 
 var login = document.getElementById("LoginForm");
@@ -24,6 +25,7 @@ document.getElementById("login-id").addEventListener("click", () => {
   login.style.transform = "translateX(300px)";
   indicator.style.transform = "translateX(0px)";
 });
+
 document.getElementById("register-id").addEventListener("click", () => {
   register.style.transform = "translateX(0px)";
   login.style.transform = "translateX(0px)";
