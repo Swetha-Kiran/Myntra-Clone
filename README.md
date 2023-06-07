@@ -7,7 +7,7 @@ A responsive multipage e-commerce website.
 
 To deploy this project use
 
-https://yourchoice-ecommerce-website.netlify.app/
+https://vastra-ecommerce-website.netlify.app/
 
 
 ## Tech Stack Used
