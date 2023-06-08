@@ -22,7 +22,7 @@ https://vastra-ecommerce-website.netlify.app/
 - Users can add products to the cart
 - Users can remove products from the cart
 - Updated total is displayed on every addition/deletion of product
-- Seperate login page
-- Seperate products page
+- Separate login page
+- Separate products page
 
 
