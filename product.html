@@ -26,77 +26,154 @@
           <li><a href="login.html" class="nav-link"> Account</a></li>
         </ul>
       </nav>
-      <a href="cart.html"><img src="./images/cart.png" alt="" width="25px" height="25px" /></a>
-      <img src="./images/menu.png" alt="" class="menu-icon" width="25px" height="25px" />
+      <img src="./images/menu.png" alt="" class="menu-icon" onclick="togglemenu()" width="25px" height="25px" />
+      <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+
+        </div>
+
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+
+        <button type="button" class="btn-buy">Buy Now</button>
+
+        <i class='bx bx-x' id="close-cart"></i>
+
+      </div>
     </div>
   </div>
 
 
-  <div class="small-container">
-    <h2 class="title">All Products</h2>
+  <section class="shop-container">
+    <h2 class="section-title">All Products</h2>
+    <div class="shop-content">
+      <div class="product-box">
+        <img src="images/product-8.jpg" alt="" class="product-img">
+        <h2 class="product-title">Fossil Watch</h2>
+        <span class="price">Rs.2500</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-2.jpg" alt="" class="product-img">
+        <h2 class="product-title">Black Shoes</h2>
+        <span class="price">Rs.1500</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-3.jpg" alt="" class="product-img">
+        <h2 class="product-title">Track Pants</h2>
+        <span class="price">Rs.500</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-4.jpg" alt="" class="product-img">
+        <h2 class="product-title">Blue T-Shirt</h2>
+        <span class="price">Rs.250</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-5.jpg" alt="" class="product-img">
+        <h2 class="product-title">Casual Shoes</h2>
+        <span class="price">Rs.750</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-6.jpg" alt="" class="product-img">
+        <h2 class="product-title">Black T-Shirt</h2>
+        <span class="price">Rs.345</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-7.jpg" alt="" class="product-img">
+        <h2 class="product-title">Socks</h2>
+        <span class="price">Rs.150</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-1.jpg" alt="" class="product-img">
+        <h2 class="product-title">Red T-Shirt</h2>
+        <span class="price">Rs.480</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-9.jpg" alt="" class="product-img">
+        <h2 class="product-title">Analog Watch</h2>
+        <span class="price">Rs.1450</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-10.jpg" alt="" class="product-img">
+        <h2 class="product-title">BLACK Shoes</h2>
+        <span class="price">Rs.1250</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-11.jpg" alt="" class="product-img">
+        <h2 class="product-title">Grey Shoes</h2>
+        <span class="price">Rs.2000</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="images/product-12.jpg" alt="" class="product-img">
+        <h2 class="product-title">Black Tracks</h2>
+        <span class="price">Rs.580</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+  </section>
+
+  <section class="contact-us" id="contact">
+    <h2 class="title">Contact Us</h2>
     <div class="row">
-      <div class="col-4">
-        <a href="productdetails.html"><img src="./images/product-8.jpg"></a>
-        <h4>Fossil Watch</h4>
-        <p>$500.00</p>
+      <div class="contact-col">
+        <div>
+          <i class='bx bxs-home'></i>
+          <span>
+            <h5>ABC Road, XYZ BUILDING</h5>
+            <p>Bangalore, Karnataka</p>
+          </span>
+        </div>
+        <div>
+          <i class='bx bxs-phone'></i>
+          <span>
+            <h5>000-555-666</h5>
+            <p>Monday to Saturday, 10Am to 6PM</p>
+          </span>
+        </div>
+
+        <div>
+          <i class='bx bxs-envelope'></i>
+          <span>
+            <h5>abc@test.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
       </div>
-      <div class="col-4">
-        <img src="./images/product-2.jpg">
-        <h4>Black Shoes</h4>
-        <p>$100.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-3.jpg">
-        <h4>Track Pants</h4>
-        <p>$45.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-4.jpg">
-        <h4>Blue T-Shirt</h4>
-        <p>$50.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-5.jpg">
-        <h4>Casual Shoes</h4>
-        <p>$70.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-6.jpg">
-        <h4>Black T-Shirt</h4>
-        <p>$50.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-7.jpg">
-        <h4>Socks</h4>
-        <p>$60.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-1.jpg">
-        <h4>Red T-Shirt</h4>
-        <p>$50.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-9.jpg">
-        <h4>Analog Watch</h4>
-        <p>$650.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-10.jpg">
-        <h4>Sports Shoes</h4>
-        <p>$450.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-11.jpg">
-        <h4>Grey Casual Shoes</h4>
-        <p>$600.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-12.jpg">
-        <h4>Tracks</h4>
-        <p>$250.00</p>
+      <div class="contact-col">
+        <form action="">
+          <input type="text" placeholder="Enter your name" required>
+          <input type="email" placeholder="Enter your email" required>
+          <input type="text" placeholder="Enter your query" required>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
-  </div>
+  </section>
 
 
   <footer class="footer">

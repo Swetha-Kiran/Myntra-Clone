@@ -19,14 +19,10 @@ https://vastra-ecommerce-website.netlify.app/
 ## Features
 
 - Responsive Navigation Bar with toggle effect
-- Categories Section
-- New Arrival Products Section
-- Contact Section
-- Footer
-- Product Page 
-- Product Details Page 
-- Cart Page
-- Responsive Login Page
-- Images
+- Users can add products to the cart
+- Users can remove products from the cart
+- Updated total is displayed on every addition/deletion of product
+- Seperate login page
+- Seperate products page
 
 
